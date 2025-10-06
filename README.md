@@ -2,7 +2,7 @@
 
 UVM 1.2-based verification environment for SUMERMCU GPIO module with AXI4-Lite interface. Includes comprehensive testbench infrastructure and DSIM simulator support.
 
-## 📋 Project Overview
+## Overview
 
 This project provides a complete UVM 1.2-based verification environment for the SUMERMCU GPIO peripheral module featuring an AXI4-Lite slave interface. The testbench implements industry-standard verification methodologies and leverages the Smartfox AXI4-Lite Verification IP (VIP) to thoroughly validate register access, data integrity, and protocol compliance.
 
