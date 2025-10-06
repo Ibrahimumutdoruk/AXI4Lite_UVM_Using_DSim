@@ -1,0 +1,23 @@
+# Simulation outputs
+*.log
+*.wlf
+*.vcd
+*.fsdb
+simv*
+*.elab
+work/
+*.mxd
+waves/
+transcript
+*.vstf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

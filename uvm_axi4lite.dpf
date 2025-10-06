@@ -1,0 +1,49 @@
+---
+# Note: The contents of this file are automatically generated.
+# Any changes made by hand may be overwritten.
+version: '0.2'
+work_dir: .
+design_root_dir: .
+simulations:
+  - name: elab
+    options: '-genimage image -L work -L DUT -top work.tb_top +acc+b -uvm 1.2'
+  - name: Sim_smoke
+    options: '-image image -uvm 1.2 -waves waves.mxd'
+source_files:
+  - language: verilog
+    path: tb/axi_pkg.sv
+  - language: verilog
+    path: tb/axi_intf.sv
+    options: +incdir+tb
+  - language: verilog
+    path: vip/uvm_axi4lite_if.sv
+    options: +incdir+vip
+  - language: verilog
+    path: vip/axi4lite_pkg.sv
+    options: '-uvm 1.2 +incdir+vip'
+  - language: verilog
+    path: tb/axi4lite_bridge.sv
+    options: +incdir+tb
+  - language: verilog
+    path: tb/gpio_smoke_seq.sv
+    options: '-uvm 1.2 +incdir+vip +incdir+tb'
+  - language: verilog
+    path: tb/axi_smoke_test.sv
+    options: '-uvm 1.2 +incdir+vip +incdir+tb'
+  - language: verilog
+    path: tb/tb_top.sv
+    options: '-uvm 1.2 +incdir+vip +incdir+tb'
+  - language: verilog
+    path: rtl\sumermcu_gpio_reg_pkg.sv
+    library_name: DUT
+  - language: verilog
+    path: rtl\sumermcu_gpio_reg_pkg.sv
+  - language: verilog
+    path: rtl\sumermcu_gpio.sv
+    library_name: DUT
+  - language: verilog
+    path: rtl\sumermcu_gpio_reg.sv
+    library_name: DUT
+library_search_paths:
+  - $STD_LIBS\ieee93
+  - rtl
