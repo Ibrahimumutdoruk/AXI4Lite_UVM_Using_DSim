@@ -57,8 +57,9 @@ Using UVM 1.2
 +UVM_OBJECT_MUST_HAVE_CONSTRUCTOR
 -uvm 1.2
 
-### Compilation Order
-#tb/axi_pkg.sv
+## Compilation Order
+```
+tb/axi_pkg.sv
 tb/axi_intf.sv
 vip/uvm_axi4lite_if.sv
 vip/axi4lite_pkg.sv
@@ -69,6 +70,9 @@ tb/tb_top.sv
 rtl/sumermcu_gpio_reg_pkg.sv
 rtl/sumermcu_gpio.sv
 rtl/sumermcu_gpio_reg.sv
+```
+
+
 ### Simulation Script
 Elobration
 - dsim -elab tb_top -L work -uvm 1.2 -genimage simv.elab
