@@ -22,6 +22,7 @@ AXI4-Lite Protocol Compliance** - Full handshake verification (AWVALID, AWREADY,
 -  Smoke and elaboration tests
 
 ## Directory Structure
+```
 AXI4Lite_UVM_Test_DSim/
 ├── rtl/                          # RTL source files
 │   ├── sumermcu_gpio.sv         # GPIO top module
@@ -37,6 +38,8 @@ AXI4Lite_UVM_Test_DSim/
 │   ├── uvm_axi4lite_if.sv     # AXI4-Lite interface
 │   └── axi4lite_pkg.sv        # AXI4-Lite package
 └── README.md
+```
+
 
 ##  Getting Started
 
